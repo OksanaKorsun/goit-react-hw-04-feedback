@@ -41,7 +41,7 @@ export const App = () => {
     <Wraper>
       <Section title="Please leave feedback">
         <FeedbackOptions
-          options={["Good", "Bad", "Neutral"]}
+          options={['Good', 'Bad', 'Neutral']}
           onLeaveFeedback={updateClicks}
         />
       </Section>
