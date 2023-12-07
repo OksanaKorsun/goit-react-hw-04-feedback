@@ -11,14 +11,14 @@ export const App = () => {
   const [bad, setBad] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const updateClicks = target => {
-    switch (target.toLowerCase()) {
-      case 'good':
+    switch (target) {
+      case 'Good':
         setGood(prevGood => prevGood + 1);
         break;
-      case 'bad':
+      case 'Bad':
         setBad(prevBad => prevBad + 1);
         break;
-      case 'neutral':
+      case 'Neutral':
         setNeutral(prevNeutral => prevNeutral + 1);
         break;
       default:
