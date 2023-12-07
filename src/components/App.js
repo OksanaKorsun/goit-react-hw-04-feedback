@@ -10,9 +10,8 @@ export const App = () => {
   const [good, setGood] = useState(0);
   const [bad, setBad] = useState(0);
   const [neutral, setNeutral] = useState(0);
-  const updateClicks = e => {
-    const target = e.target.textContent.toLowerCase();
-    switch (target) {
+  const updateClicks = target => {
+    switch (target.toLowerCase()) {
       case 'good':
         setGood(prevGood => prevGood + 1);
         break;
